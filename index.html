@@ -47,23 +47,3 @@
 
         </div>
     </div>
-
-    <script>
-        function showSuccess(event) {
-            // For demo only — remove this if you want real redirect after POST
-            event.preventDefault();
-            document.getElementById('step2').style.display = 'none';
-            document.getElementById('step3').style.display = 'block';
-
-            // Optionally submit form manually if you’re using JS handler
-            const form = document.getElementById('step2');
-            const formData = new FormData(form);
-
-            fetch(form.action, {
-                method: "POST",
-                body: formData
-            });
-        }
-    </script>
-</body>
-</html>
