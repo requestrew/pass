@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1c1e21;
+    font-size: 22px;
+}
+
+.form-subtext {
+    text-align: center;
+    color: #65676b;
+    font-size: 14px;
+}
+
+/* Input */
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #165cdb;
+}
+
+/* Success Step */
+.success-container {
+    text-align: center;
+}
+
+.success-icon i {
+    font-size: 50px;
+    color: #00a400;
+    margin-bottom: 15px;
+}
+
+.success-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1c1e21;
+}
+
+.success-message {
+    font-size: 14px;
+    color: #4b4f56;
+    margin-bottom: 20px;
+}
